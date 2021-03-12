@@ -44,7 +44,7 @@ namespace Kerites
                 
             }
             Console.WriteLine($"2. feladat:\nAz eladott telkek száma: {adatok.Count}");
-            Console.WriteLine($"\n3. feladat:\nA {adatok.Last().Sorszam} oldalon adták el az utolsó telket.\nAz utolsó telek házszáma: {adatok.Last().Sorszam}");
+            Console.WriteLine($"\n3. feladat:\nA {adatok.Last().Oldal} oldalon adták el az utolsó telket.\nAz utolsó telek házszáma: {adatok.Last().Sorszam}");
             Console.WriteLine($"\n4. feladat:");
             foreach (var item in adatok.Where(x=>x.Oldal=="Páratlan"&&x.Szin!=":"&&x.Szin!="#"))
             {
